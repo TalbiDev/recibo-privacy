@@ -6,11 +6,11 @@ title: Privacy Policy — Recibo
 
 Last updated: 2026-10-26
 
-This policy describes how the Android app **Recibo** (receipt-based expense tracking), developed by talbidev, handles your data. *Une version française suit la version anglaise.*
+This policy describes how the Android app **Recibo** (receipt-based expense tracking), developed by T.Dev, handles your data. *Une version française suit la version anglaise.*
 
 In short: Recibo works fully offline without an account. An account (Sign in with Google) is optional and only needed to scan receipts automatically and to back up and sync your data to the cloud. Recibo contains no advertising and no analytics, and your data is never sold.
 
-**Data controller:** Said Talbi (T.Dev), Morocco. Contact: [talbidev@gmail.com](mailto:talbidev@gmail.com)
+**Data controller:** Said Talbi (T.Dev). Contact: [talbidev@gmail.com](mailto:talbidev@gmail.com)
 
 ## 1. Data we collect
 
@@ -70,7 +70,7 @@ Your account, synced data and receipt photos are hosted by Supabase in the Europ
 
 ## 7. Your rights
 
-Depending on where you live (including the GDPR and Moroccan Law No. 09-08), you have the right to:
+Depending on where you live, you have the right to:
 
 - **Access and portability:** all your data is visible in the app, and you can export your receipts as a CSV file (Receipts → Export → Export as CSV, which exports the current, filtered list; or select receipts → Export → Export as CSV). Photos are not included in the export.
 - **Rectification:** edit any receipt, category, merchant or budget in the app.
@@ -108,11 +108,11 @@ Questions or requests: [talbidev@gmail.com](mailto:talbidev@gmail.com)
 
 Dernière mise à jour : 2026-10-26
 
-Cette politique décrit la manière dont l'application Android **Recibo** (suivi de dépenses à partir de reçus), développée par talbidev, traite vos données.
+Cette politique décrit la manière dont l'application Android **Recibo** (suivi de dépenses à partir de reçus), développée par T.Dev, traite vos données.
 
 En bref : Recibo fonctionne entièrement hors ligne, sans compte. Un compte (connexion avec Google) est facultatif : il n'est nécessaire que pour scanner automatiquement les reçus et pour sauvegarder et synchroniser vos données dans le cloud. Recibo ne contient ni publicité ni outil de mesure d'audience, et vos données ne sont jamais vendues.
 
-**Responsable du traitement :** Said Talbi (T.Dev), Maroc. Contact : [talbidev@gmail.com](mailto:talbidev@gmail.com)
+**Responsable du traitement :** Said Talbi (T.Dev). Contact : [talbidev@gmail.com](mailto:talbidev@gmail.com)
 
 ## 1. Données collectées
 
@@ -172,7 +172,7 @@ Votre compte, vos données synchronisées et les photos de vos reçus sont hébe
 
 ## 7. Vos droits
 
-Selon votre lieu de résidence (notamment le RGPD et la loi marocaine n° 09-08), vous disposez des droits suivants :
+Selon votre lieu de résidence, vous disposez des droits suivants :
 
 - **Accès et portabilité :** toutes vos données sont visibles dans l'application, et vous pouvez exporter vos reçus en fichier CSV (Reçus → Exporter → Exporter en CSV, qui exporte la liste affichée, filtres compris ; ou sélectionner des reçus → Exporter → Exporter en CSV). Les photos ne font pas partie de l'export.
 - **Rectification :** modifiez tout reçu, catégorie, marchand ou budget dans l'application.
