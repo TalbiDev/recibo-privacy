@@ -4,11 +4,11 @@ title: Privacy Policy — Recibo
 
 # Privacy Policy — Recibo
 
-Last updated: 2026-10-26
+Last updated: 2026-10-29
 
 This policy describes how the Android app **Recibo** (receipt-based expense tracking), developed by T.Dev, handles your data. *Une version française suit la version anglaise.*
 
-In short: Recibo works fully offline without an account. An account (Sign in with Google) is optional and only needed to scan receipts automatically and to back up and sync your data to the cloud. Recibo contains no advertising and no analytics, and your data is never sold.
+In short: Recibo works fully offline without an account. An account (Sign in with Google) is optional and only needed to scan receipts automatically and to back up and sync your data to the cloud. Recibo contains no advertising and integrates no advertising or analytics SDK (only the diagnostic data described in section 3 is collected, by Google), and your data is never sold.
 
 **Data controller:** Said Talbi (T.Dev). Contact: [talbidev@gmail.com](mailto:talbidev@gmail.com)
 
@@ -44,7 +44,7 @@ We do not use your data for advertising, profiling, or to train AI models, and w
 - **Supabase** (database, authentication, file storage) hosts your account, your synced data, your receipt photos and your scan counter. The production project is hosted in the eu-central-1 region (Frankfurt, European Union). Data is encrypted in transit (TLS) and at rest (AES-256). Currently, our database has no managed backups: when your account is deleted, the deletion is final immediately. Privacy policy: <https://supabase.com/privacy>
 - **Cloudflare** (Workers) runs the extraction service that receives a receipt image, forwards it for reading and returns the result. The image is not stored. Its technical logs (section 1) are kept for up to 7 days. Privacy policy: <https://www.cloudflare.com/privacypolicy/>
 - **Anthropic** (Claude API) reads the receipt image and returns the extracted fields. Only the image and a fixed instruction are sent: no account identifier, email address or other data. Anthropic does not use this data to train its models and deletes it within 30 days, unless it must be kept to comply with the law or because it was flagged for abuse. Privacy policy: <https://www.anthropic.com/legal/privacy>
-- **Google** provides Sign in with Google (through Android's Credential Manager) and the on-device document scanner (ML Kit, Google Play services) used to capture receipts. The scanner captures and crops the receipt on your device; the resulting image is then handled by Recibo as described above. Privacy policy: <https://policies.google.com/privacy>
+- **Google** provides Sign in with Google (through Android's Credential Manager) and the on-device document scanner (ML Kit, Google Play services) used to capture receipts. The scanner captures and crops the receipt on your device; the resulting image is then handled by Recibo as described above. During a scan, Google Play services (ML Kit Document Scanner) may collect diagnostic information and device identifiers (device model, operating system version, performance, error codes), under Google's privacy policy. Privacy policy: <https://policies.google.com/privacy>
 - **Android backup** (Google): if you have Android backup turned on, Recibo's local database and settings may be included in your device backup (see section 6).
 
 ## 4. International transfers
@@ -74,7 +74,7 @@ Depending on where you live, you have the right to:
 
 - **Access and portability:** all your data is visible in the app, and you can export your receipts as a CSV file (Receipts → Export → Export as CSV, which exports the current, filtered list; or select receipts → Export → Export as CSV). Photos are not included in the export.
 - **Rectification:** edit any receipt, category, merchant or budget in the app.
-- **Deletion:** delete individual items in the app, or delete your account (section 8).
+- **Deletion:** delete individual items in the app. A deleted receipt (Delete on the receipt, or select receipts → Move to trash) goes to the trash (Settings → Trash), where you can restore it for 30 days; after that, it is permanently deleted, with its photo, the next time the app is opened. From the trash, Delete permanently erases it right away. You can also delete your account, in the app or on the web (section 8).
 - **Objection and restriction:** you can stop all cloud processing at any time by signing out or deleting your account; the app keeps working locally.
 
 For any request, contact us (section 12). You may also lodge a complaint with your local data protection authority.
@@ -90,9 +90,9 @@ Deleting your account permanently and immediately removes your account, all your
 
 Recibo is not directed at children under 13, and we do not knowingly collect personal data from them.
 
-## 10. No advertising, no analytics
+## 10. No advertising, no analytics SDK
 
-Recibo contains no advertising SDK and no analytics or tracking SDK. Your data is never sold or shared for advertising.
+Recibo contains no advertising and integrates no advertising or analytics SDK. The only diagnostic data collected is collected by Google Play services during a scan, as described in section 3. Your data is never sold, and is not shared with third parties other than the service providers listed in section 3, which process it on Recibo's behalf.
 
 ## 11. Changes to this policy
 
@@ -106,11 +106,11 @@ Questions or requests: [talbidev@gmail.com](mailto:talbidev@gmail.com)
 
 # Politique de confidentialité (français)
 
-Dernière mise à jour : 2026-10-26
+Dernière mise à jour : 2026-10-29
 
 Cette politique décrit la manière dont l'application Android **Recibo** (suivi de dépenses à partir de reçus), développée par T.Dev, traite vos données.
 
-En bref : Recibo fonctionne entièrement hors ligne, sans compte. Un compte (connexion avec Google) est facultatif : il n'est nécessaire que pour scanner automatiquement les reçus et pour sauvegarder et synchroniser vos données dans le cloud. Recibo ne contient ni publicité ni outil de mesure d'audience, et vos données ne sont jamais vendues.
+En bref : Recibo fonctionne entièrement hors ligne, sans compte. Un compte (connexion avec Google) est facultatif : il n'est nécessaire que pour scanner automatiquement les reçus et pour sauvegarder et synchroniser vos données dans le cloud. Recibo ne contient aucune publicité et n'intègre aucun SDK de publicité ni d'analyse (seules les données de diagnostic décrites en section 3 sont collectées, par Google), et vos données ne sont jamais vendues.
 
 **Responsable du traitement :** Said Talbi (T.Dev). Contact : [talbidev@gmail.com](mailto:talbidev@gmail.com)
 
@@ -146,7 +146,7 @@ Nous n'utilisons pas vos données pour la publicité, le profilage ou l'entraîn
 - **Supabase** (base de données, authentification, stockage de fichiers) héberge votre compte, vos données synchronisées, les photos de vos reçus et votre compteur de scans. Le projet de production est hébergé dans la région eu-central-1 (Francfort, Union européenne). Les données sont chiffrées en transit (TLS) et au repos (AES-256). Actuellement, notre base de données n'a pas de sauvegarde gérée : quand votre compte est supprimé, la suppression est définitive immédiatement. Politique de confidentialité : <https://supabase.com/privacy>
 - **Cloudflare** (Workers) exécute le service d'extraction, qui reçoit l'image d'un reçu, la transmet pour lecture et renvoie le résultat. L'image n'est pas conservée. Ses journaux techniques (section 1) sont conservés jusqu'à 7 jours. Politique de confidentialité : <https://www.cloudflare.com/privacypolicy/>
 - **Anthropic** (API Claude) lit l'image du reçu et renvoie les champs extraits. Seuls l'image et une consigne fixe sont envoyés : aucun identifiant de compte, aucune adresse e-mail, aucune autre donnée. Anthropic n'utilise pas ces données pour entraîner ses modèles et les supprime dans un délai de 30 jours, sauf obligation légale ou signalement d'abus. Politique de confidentialité : <https://www.anthropic.com/legal/privacy>
-- **Google** fournit la connexion avec Google (via le Credential Manager d'Android) et le scanner de documents sur l'appareil (ML Kit, services Google Play) utilisé pour photographier les reçus. Le scanner capture et recadre le reçu sur votre appareil ; l'image obtenue est ensuite traitée par Recibo comme décrit ci-dessus. Politique de confidentialité : <https://policies.google.com/privacy>
+- **Google** fournit la connexion avec Google (via le Credential Manager d'Android) et le scanner de documents sur l'appareil (ML Kit, services Google Play) utilisé pour photographier les reçus. Le scanner capture et recadre le reçu sur votre appareil ; l'image obtenue est ensuite traitée par Recibo comme décrit ci-dessus. Pendant un scan, les services Google Play (ML Kit Document Scanner) peuvent collecter des informations de diagnostic et des identifiants d'appareil (modèle de l'appareil, version du système, performances, codes d'erreur), selon la politique de confidentialité de Google. Politique de confidentialité : <https://policies.google.com/privacy>
 - **Sauvegarde Android** (Google) : si la sauvegarde Android est activée, la base locale et les réglages de Recibo peuvent faire partie de la sauvegarde de votre appareil (voir section 6).
 
 ## 4. Transferts internationaux
@@ -176,7 +176,7 @@ Selon votre lieu de résidence, vous disposez des droits suivants :
 
 - **Accès et portabilité :** toutes vos données sont visibles dans l'application, et vous pouvez exporter vos reçus en fichier CSV (Reçus → Exporter → Exporter en CSV, qui exporte la liste affichée, filtres compris ; ou sélectionner des reçus → Exporter → Exporter en CSV). Les photos ne font pas partie de l'export.
 - **Rectification :** modifiez tout reçu, catégorie, marchand ou budget dans l'application.
-- **Suppression :** supprimez des éléments un par un dans l'application, ou supprimez votre compte (section 8).
+- **Suppression :** supprimez des éléments un par un dans l'application. Un reçu supprimé (Supprimer sur le reçu, ou sélectionner des reçus → Mettre à la corbeille) va dans la corbeille (Réglages → Corbeille), où vous pouvez le restaurer pendant 30 jours ; il est ensuite supprimé définitivement, avec sa photo, à la prochaine ouverture de l'application. Depuis la corbeille, Supprimer définitivement l'efface tout de suite. Vous pouvez aussi supprimer votre compte, dans l'application ou sur le web (section 8).
 - **Opposition et limitation :** vous pouvez arrêter tout traitement dans le cloud à tout moment en vous déconnectant ou en supprimant votre compte ; l'application continue de fonctionner en local.
 
 Pour toute demande, contactez-nous (section 12). Vous pouvez aussi adresser une réclamation à l'autorité de protection des données de votre pays.
@@ -192,9 +192,9 @@ La suppression du compte efface définitivement et immédiatement votre compte, 
 
 Recibo n'est pas destinée aux enfants de moins de 13 ans, et nous ne collectons pas sciemment de données personnelles les concernant.
 
-## 10. Ni publicité, ni mesure d'audience
+## 10. Ni publicité, ni SDK d'analyse
 
-Recibo ne contient aucun SDK publicitaire ni aucun SDK de mesure d'audience ou de suivi. Vos données ne sont jamais vendues ni partagées à des fins publicitaires.
+Recibo ne contient aucune publicité et n'intègre aucun SDK de publicité ni d'analyse. Les seules données de diagnostic collectées le sont par les services Google Play pendant un scan, comme décrit en section 3. Vos données ne sont jamais vendues, et ne sont partagées avec aucun tiers en dehors des prestataires listés en section 3, qui les traitent pour le compte de Recibo.
 
 ## 11. Modifications
 
